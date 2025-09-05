@@ -6,12 +6,17 @@ async function bootstrap() {
   
   // Enable CORS for frontend communication
   app.enableCors({
-    origin: 'http://localhost:5173', // Vite default port
+    origin: process.env.NODE_ENV === 'production' 
+      ? 'https://davinciphase2.vercel.app' 
+      : 'http://localhost:5173',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   });
   
-  await app.listen(3000);
-  console.log('Backend server running on http://localhost:3000');
+  const port = process.env.PORT || 3000;
+  await app.listen(port);
+  console.log(`Backend server running on port ${port}`);
 }
-bootstrap();
+
+// Vercel için export
+export default bootstrap;
