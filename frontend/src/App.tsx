@@ -258,9 +258,8 @@ function App()
         <section className="posts-section">
           <h2>Posts</h2>
 
-          {/* Filter by User */}
-          <div className="filter">
-            <label>Filter by User:</label>
+          {/* Filter by User - Embedded */}
+          <div className="filter-embedded">
             <select
               value={selectedUserId || ''}
               onChange={(e) =>
@@ -269,6 +268,7 @@ function App()
                 setSelectedUserId(userId);
                 loadPosts(userId || undefined);
               }}
+              className="filter-select"
             >
               <option value="">All Users</option>
               {users.map(user => (
