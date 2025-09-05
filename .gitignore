@@ -8,6 +8,12 @@ yarn-error.log*
 dist/
 build/
 
+# NestJS build output
+backend/dist/
+
+# Vite build output
+frontend/dist/
+
 # Environment variables
 .env
 .env.local
