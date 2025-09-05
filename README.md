@@ -230,17 +230,6 @@ docker build -t phase2-backend ./backend
 docker build -t phase2-frontend ./frontend
 ```
 
-## 🚀 Deployment Seçenekleri
-
-### Frontend Deployment
-- **Netlify**: [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ZehraGnbz/davinci_phase2)
-- **Vercel**: [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ZehraGnbz/davinci_phase2)
-- **GitHub Pages**: `npm run build` → `dist` klasörünü deploy edin
-
-### Backend Deployment
-- **Railway**: [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template)
-- **Render**: [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
-- **Heroku**: `git push heroku main`
 
 ## 📞 Katkıda Bulunma
 
@@ -256,9 +245,9 @@ Bu proje eğitim amaçlı geliştirilmiştir.
 
 ## 👨‍💻 Geliştirici
 
-**Zehra Günbüz**
+**Zehra Günbaz**
 - 🌐 **GitHub**: [@ZehraGnbz](https://github.com/ZehraGnbz)
-- 💼 **LinkedIn**: [Zehra Günbüz](https://www.linkedin.com/in/zehragunbaz/)
+- 💼 **LinkedIn**: [Zehra Günbaz](https://www.linkedin.com/in/zehragunbaz/)
 
 ---
 
@@ -273,6 +262,4 @@ Bu proje, modern web geliştirme teknolojilerini kullanarak:
 - ✅ **Responsive** layout
 - ✅ **RESTful API** tasarımı
 - ✅ **Clean code** ve best practices
-
-**İş başvurusu için hazırlanmış profesyonel bir portföy projesidir.**
 
