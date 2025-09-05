@@ -166,5 +166,3 @@ Frontend, backend API'si ile şu şekilde entegre edilmiştir:
 Proje hakkında sorularınız için lütfen GitHub issues bölümünü kullanın.
 
 ---
-
-**Not**: Bu proje eğitim amaçlı geliştirilmiştir ve production ortamında kullanım için ek optimizasyonlar yapılması önerilir.
