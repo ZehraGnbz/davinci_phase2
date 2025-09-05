@@ -154,5 +154,3 @@ Bu backend, modern bir yönetim sistemi için tasarlanmıştır ve frontend ile 
 Proje hakkında sorularınız için lütfen GitHub issues bölümünü kullanın.
 
 ---
-
-**Not**: Bu proje eğitim amaçlı geliştirilmiştir ve production ortamında kullanım için ek güvenlik önlemleri alınması önerilir.
