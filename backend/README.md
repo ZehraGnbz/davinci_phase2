@@ -1,8 +1,8 @@
-# Backend - Da Vinci Board Game Cafe Management System
+# Backend - Phase 2 Management System
 
 ## 🎯 Proje Açıklaması
 
-Bu proje, Da Vinci Board Game Cafe için geliştirilmiş bir kullanıcı ve post yönetim sisteminin backend API'sidir. NestJS framework'ü kullanılarak TypeScript ile geliştirilmiştir.
+Bu proje, iş başvurusu için geliştirilmiş bir kullanıcı ve post yönetim sisteminin backend API'sidir. NestJS framework'ü kullanılarak TypeScript ile geliştirilmiştir.
 
 ## 🛠️ Kullanılan Teknolojiler
 
@@ -147,7 +147,7 @@ backend/
 
 ## 🎨 Tema
 
-Bu backend, **Da Vinci Board Game Cafe** temasına uygun olarak tasarlanmıştır ve frontend ile birlikte çalışacak şekilde optimize edilmiştir.
+Bu backend, modern bir yönetim sistemi için tasarlanmıştır ve frontend ile birlikte çalışacak şekilde optimize edilmiştir.
 
 ## 📞 İletişim
 

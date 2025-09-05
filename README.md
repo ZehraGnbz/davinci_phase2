@@ -1,8 +1,8 @@
-# 🎮 Da Vinci Board Game Cafe Management System
+# 🎮 Phase 2 - Management System
 
 ## 📖 Proje Açıklaması
 
-Bu proje, **Da Vinci Board Game Cafe** için geliştirilmiş modern bir kullanıcı ve post yönetim sistemidir. Full-stack web uygulaması olarak tasarlanmış olup, frontend ve backend ayrı portlarda çalışacak şekilde optimize edilmiştir.
+Bu proje, iş başvurusu için geliştirilmiş modern bir kullanıcı ve post yönetim sistemidir. Full-stack web uygulaması olarak tasarlanmış olup, frontend ve backend ayrı portlarda çalışacak şekilde optimize edilmiştir.
 
 ## 🎯 Özellikler
 
@@ -106,7 +106,7 @@ phase2/
 
 ## 🎨 Tema ve Tasarım
 
-### Da Vinci Board Game Cafe Teması
+### Modern UI/UX Teması
 - **Ortaçağ/Rönesans** tarzı dekoratif tasarım
 - **Ahşap tonları** ve doğal renkler
 - **Times New Roman** serif font (header)
@@ -193,10 +193,10 @@ npm run preview
 ### Docker (Opsiyonel)
 ```bash
 # Backend
-docker build -t davinci-backend ./backend
+docker build -t phase2-backend ./backend
 
 # Frontend
-docker build -t davinci-frontend ./frontend
+docker build -t phase2-frontend ./frontend
 ```
 
 ## 📞 Katkıda Bulunma
@@ -211,14 +211,3 @@ docker build -t davinci-frontend ./frontend
 
 Bu proje eğitim amaçlı geliştirilmiştir.
 
-## 👥 Geliştirici
-
-**Da Vinci Board Game Cafe Development Team**
-
----
-
-## 🎮 Da Vinci Board Game Cafe
-
-*"Rönesans ruhunu yaşatan, strateji ve eğlencenin buluştuğu yer"*
-
-♔ **Klasik oyunlar, modern teknoloji** ♔

@@ -1,8 +1,8 @@
-# Frontend - Da Vinci Board Game Cafe Management System
+# Frontend - Phase 2 Management System
 
 ## 🎯 Proje Açıklaması
 
-Bu proje, Da Vinci Board Game Cafe için geliştirilmiş bir kullanıcı ve post yönetim sisteminin frontend uygulamasıdır. React, TypeScript ve Vite kullanılarak geliştirilmiştir.
+Bu proje, iş başvurusu için geliştirilmiş bir kullanıcı ve post yönetim sisteminin frontend uygulamasıdır. React, TypeScript ve Vite kullanılarak geliştirilmiştir.
 
 ## 🛠️ Kullanılan Teknolojiler
 
@@ -16,7 +16,7 @@ Bu proje, Da Vinci Board Game Cafe için geliştirilmiş bir kullanıcı ve post
 
 ## 🎨 Tema ve Tasarım
 
-- **Da Vinci Board Game Cafe** teması
+- **Modern UI/UX** teması
 - **Ortaçağ/Rönesans** tarzı dekoratif tasarım
 - **Ahşap tonları** ve doğal renkler
 - **Responsive** tasarım (mobile, tablet, desktop)
@@ -133,7 +133,7 @@ frontend/
 ## 🎮 Kullanıcı Arayüzü
 
 ### Ana Sayfa
-- **Header**: Da Vinci Board Game Cafe başlığı
+- **Header**: Phase 2 Management System başlığı
 - **İki Sütun**: Users ve Posts bölümleri
 - **Formlar**: Yeni kullanıcı/post oluşturma
 - **Listeler**: Mevcut kullanıcılar ve postlar
