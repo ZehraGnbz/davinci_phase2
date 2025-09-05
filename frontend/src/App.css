@@ -1,5 +1,75 @@
 /* Body and app styles moved to index.css */
 
+/* Form Toggle Styles */
+.form-toggle {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.toggle-button {
+  background: linear-gradient(135deg, #8B4513, #A0522D);
+  color: #F4E4BC;
+  border: 2px solid rgba(139, 69, 19, 0.6);
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+  position: relative;
+  overflow: hidden;
+  font-family: 'Times New Roman', serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.toggle-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.toggle-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 69, 19, 0.4);
+  background: linear-gradient(135deg, #A0522D, #CD853F);
+}
+
+.toggle-button:hover::before {
+  left: 100%;
+}
+
+.toggle-button:active {
+  transform: translateY(0);
+}
+
+/* Form Actions Styles */
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.form-actions button:last-child {
+  background: linear-gradient(135deg, #D2691E, #CD853F);
+  color: #F4E4BC;
+  box-shadow: 0 4px 15px rgba(210, 105, 30, 0.3);
+  border: 1px solid rgba(210, 105, 30, 0.6);
+}
+
+.form-actions button:last-child:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(210, 105, 30, 0.4);
+  background: linear-gradient(135deg, #CD853F, #D2691E);
+}
+
 header {
   text-align: center;
   margin-bottom: 3rem;

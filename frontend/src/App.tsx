@@ -17,6 +17,10 @@ function App()
   const [editingUser, setEditingUser] = useState<User | null>(null);
   const [editingPost, setEditingPost] = useState<Post | null>(null);
 
+  // Form visibility states
+  const [showUserForm, setShowUserForm] = useState(false);
+  const [showPostForm, setShowPostForm] = useState(false);
+
   // Load initial data
   useEffect(() =>
   {
@@ -65,6 +69,7 @@ function App()
       const response = await userApi.create(newUser);
       setUsers([...users, response.data]);
       setNewUser({ name: '', email: '' });
+      setShowUserForm(false);
     } catch (err)
     {
       console.error('Error creating user:', err);
@@ -111,6 +116,7 @@ function App()
       const response = await postApi.create(newPost);
       setPosts([...posts, response.data]);
       setNewPost({ title: '', content: '', authorId: 0 });
+      setShowPostForm(false);
     } catch (err)
     {
       console.error('Error creating post:', err);
@@ -167,7 +173,7 @@ function App()
   return (
     <div className="app">
       <header>
-        <h1>User & Post Management System</h1>
+        <h1>Management System</h1>
         <p>Frontend: React + TypeScript + Vite | Backend: NestJS + TypeScript</p>
       </header>
 
@@ -176,25 +182,40 @@ function App()
         <section className="users-section">
           <h2>Users</h2>
 
+          {/* Create User Button */}
+          <div className="form-toggle">
+            <button
+              onClick={() => setShowUserForm(!showUserForm)}
+              className="toggle-button"
+            >
+              {showUserForm ? '▼' : '▶'} Create New User
+            </button>
+          </div>
+
           {/* Create User Form */}
-          <form onSubmit={handleCreateUser} className="form">
-            <h3>Create New User</h3>
-            <input
-              type="text"
-              placeholder="Name"
-              value={newUser.name}
-              onChange={(e) => setNewUser({ ...newUser, name: e.target.value })}
-              required
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              value={newUser.email}
-              onChange={(e) => setNewUser({ ...newUser, email: e.target.value })}
-              required
-            />
-            <button type="submit">Create User</button>
-          </form>
+          {showUserForm && (
+            <form onSubmit={handleCreateUser} className="form">
+              <h3>Create New User</h3>
+              <input
+                type="text"
+                placeholder="Name"
+                value={newUser.name}
+                onChange={(e) => setNewUser({ ...newUser, name: e.target.value })}
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                value={newUser.email}
+                onChange={(e) => setNewUser({ ...newUser, email: e.target.value })}
+                required
+              />
+              <div className="form-actions">
+                <button type="submit">Create User</button>
+                <button type="button" onClick={() => setShowUserForm(false)}>Cancel</button>
+              </div>
+            </form>
+          )}
 
           {/* Users List */}
           <div className="list">
@@ -256,34 +277,49 @@ function App()
             </select>
           </div>
 
-          {/* Create Post Form */}
-          <form onSubmit={handleCreatePost} className="form">
-            <h3>Create New Post</h3>
-            <input
-              type="text"
-              placeholder="Title"
-              value={newPost.title}
-              onChange={(e) => setNewPost({ ...newPost, title: e.target.value })}
-              required
-            />
-            <textarea
-              placeholder="Content"
-              value={newPost.content}
-              onChange={(e) => setNewPost({ ...newPost, content: e.target.value })}
-              required
-            />
-            <select
-              value={newPost.authorId}
-              onChange={(e) => setNewPost({ ...newPost, authorId: parseInt(e.target.value) })}
-              required
+          {/* Create Post Button */}
+          <div className="form-toggle">
+            <button
+              onClick={() => setShowPostForm(!showPostForm)}
+              className="toggle-button"
             >
-              <option value={0}>Select Author</option>
-              {users.map(user => (
-                <option key={user.id} value={user.id}>{user.name}</option>
-              ))}
-            </select>
-            <button type="submit">Create Post</button>
-          </form>
+              {showPostForm ? '▼' : '▶'} Create New Post
+            </button>
+          </div>
+
+          {/* Create Post Form */}
+          {showPostForm && (
+            <form onSubmit={handleCreatePost} className="form">
+              <h3>Create New Post</h3>
+              <input
+                type="text"
+                placeholder="Title"
+                value={newPost.title}
+                onChange={(e) => setNewPost({ ...newPost, title: e.target.value })}
+                required
+              />
+              <textarea
+                placeholder="Content"
+                value={newPost.content}
+                onChange={(e) => setNewPost({ ...newPost, content: e.target.value })}
+                required
+              />
+              <select
+                value={newPost.authorId}
+                onChange={(e) => setNewPost({ ...newPost, authorId: parseInt(e.target.value) })}
+                required
+              >
+                <option value={0}>Select Author</option>
+                {users.map(user => (
+                  <option key={user.id} value={user.id}>{user.name}</option>
+                ))}
+              </select>
+              <div className="form-actions">
+                <button type="submit">Create Post</button>
+                <button type="button" onClick={() => setShowPostForm(false)}>Cancel</button>
+              </div>
+            </form>
+          )}
 
           {/* Posts List */}
           <div className="list">
