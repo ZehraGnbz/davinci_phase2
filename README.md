@@ -258,7 +258,7 @@ Bu proje eğitim amaçlı geliştirilmiştir.
 
 **Zehra Günbüz**
 - 🌐 **GitHub**: [@ZehraGnbz](https://github.com/ZehraGnbz)
-- 💼 **LinkedIn**: [Zehra Günbüz](https://linkedin.com/in/zehra-gunbuz)
+- 💼 **LinkedIn**: [Zehra Günbüz](https://www.linkedin.com/in/zehragunbaz/)
 
 ---
 
